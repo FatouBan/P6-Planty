@@ -2,3 +2,44 @@
 body * {
     font-family: 'Syne', sans-serif;
 }
+
+/* Style du conteneur du formulaire */
+.wpcf7-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style des labels */
+.wpcf7-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top:10px;
+    color: black;
+    font-family: "syne", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Style des champs de texte et de l'e-mail */
+.wpcf7-form text,
+.wpcf7-form email,
+.wpcf7-form textarea {
+    width: 50%;
+    padding: 25px;
+    border: 1px solid #e0b9b4;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton d'envoi */
+.wpcf7-form input[type="submit"] {
+    background-color: #e0b9b4;
+    color: #fff;
+    padding: 20px 76px;
+    border: none;
+    border-radius: 5px;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background-color: #c02e44;
+}
