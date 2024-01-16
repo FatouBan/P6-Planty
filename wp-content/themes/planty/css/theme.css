@@ -1,45 +1,419 @@
-@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
-body * {
-    font-family: 'Syne', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+.uk-touch {
+    overflow-x: hidden;
+    width: 100%;
+} 
+
+/*** Style des menus ***/
+
+.menu-item a {
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Syne';
+    font-weight: 400;
+    color: black !important;
+    text-decoration: none;
 }
 
-/* Style du conteneur du formulaire */
-.wpcf7-form {
-    max-width: 400px;
-    margin: 0 auto;
+.menu-item a:hover {
+    text-decoration: none;
+    font-weight: 700;
 }
 
-/* Style des labels */
-.wpcf7-form label {
-    display: block;
-    margin-bottom: 5px;
-    margin-top:10px;
+.menu-commander a {
+    padding: 30px 61px 30px 61px;
+    font-weight: 700;
+    background-color: #DC9F96;
+    color: white !important;
+    font-family: 'Syne';
+    font-size: 16px;
+    border: solid 1px #DC9F96;
+}
+
+.menu-commander a:hover {
+    background-color: #C02E44;
+    text-decoration: none;
+    border: solid 1px #C02E44;
+}
+
+/* Style du conteneur du formulaire "Nous rencontrer */
+.wpcf7-contact-form {
+    margin-bottom: 22px;
+}
+
+p{
+    margin-top: 15px;
+}
+
+/*** Style du formulaire "nous rencontrer" ***/
+
+.wpcf7-contact-form .text,
+.wpcf7-contact-form .email,
+.wpcf7-contact-form .textarea {
+    width: 100%;
+    border-radius: 7px; 
+	margin-top: 15px;
+    border: 1px solid #ECE2DA;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wpcf7-contact-form .textarea{
+    height: 237px;
+}
+
+.wpcf7-contact-form .text,
+.wpcf7-contact-form .email {
+    height: 71px;
+}
+
+.wpcf7-contact-form label {
     color: black;
-    font-family: "syne", sans-serif;
+    font-family: "syne";
     font-size: 20px;
     font-weight: 400;
 }
 
-/* Style des champs de texte et de l'e-mail */
-.wpcf7-form text,
-.wpcf7-form email,
-.wpcf7-form textarea {
-    width: 50%;
-    padding: 25px;
-    border: 1px solid #e0b9b4;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
 
-/* Style du bouton d'envoi */
-.wpcf7-form input[type="submit"] {
+/*** Style du bouton d'envoi formulaire "nous rencontrer" ***/
+
+.wpcf7-contact-form input[type="submit"] {
+    width: 198px;
+    height: 55px;
     background-color: #e0b9b4;
     color: #fff;
-    padding: 20px 76px;
-    border: none;
+	font-size: 15px;
+    font-family: 'Syne'; 
+    font-weight: 400;
     border-radius: 5px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border: none;
 }
 
-.wpcf7-form input[type="submit"]:hover {
+.wpcf7-contact-form input[type="submit"]:hover {
     background-color: #c02e44;
+}
+
+/*** Formulaires Infos et Livraison ***/
+
+h2{
+    color: #FFFFFF;
+    font-family: "Syne", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.wpcf7--form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wpcf7--form .wpcf7-text,
+.wpcf7-email {
+    border: 1px solid #3B8E46;
+	border-radius: 7px;
+    width: 100%;
+    height: 71px;
+    margin-top: 10px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wpcf7-info-form label {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Syne';
+	color: #FFFFFF;
+	
+}
+
+/*** Style du bouton d'envoi formulaire "infos et livraison" ***/
+
+.submit--form {
+    width: 198px;
+    height: 55px;
+    background-color: #e0b9b4;
+    color: #fff;
+	font-size: 15px;
+    font-family: 'Syne'; 
+    font-weight: 400;
+    border-radius: 5px;
+	text-align: center;
+    border: none;
+    margin-left: 42.5%;
+}
+
+.submit--form:hover {
+    background-color: #c02e44;
+}
+
+/*** Formulaire "commande" ***/
+
+.wpcf7-order-form input[type="text"] {
+    width: 39px;
+    height: 56px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wpcf7-order-form input[type="text"]::placeholder {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.elementor-element-94803c6,
+.elementor-element-a34fb28,
+.elementor-element-fc484e1,
+.elementor-element-b006859 {
+    width: 100%; 
+}
+
+
+/*** Media queries formulaires et boutons d'envoi ***/
+
+@media only screen and (max-width: 1368px) {
+    .menu-commander a {
+        background-color: transparent !important;
+        color: black !important;
+        border: none;
+        font-size: 16px !important;
+        padding: 0 0 0 0;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-commander a:hover {
+        color: black !important;
+        border: none;
+        font-size: 16px !important;
+        padding: 0 0 0 0;
+        text-decoration: none;
+    }
+    .wpcf7-contact-form .text,
+    .wpcf7-contact-form .email,
+    .wpcf7-contact-form .textarea {
+        width: 100%;
+        display: flex;
+        margin-left: 6%;
+    }
+    
+     
+    .wpcf7--form .wpcf7-text,
+    .wpcf7-email {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form label {
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form input[type="submit"] {
+        margin-left: 19%;
+    }
+
+    .wpcf7--form {
+        flex-direction: row;
+    }
+
+    .wpcf7-info-form label,
+    h2 {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .uk-touch{
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-commander a {
+        background-color: transparent !important;
+        color: black !important;
+        border: none;
+        font-size: 16px !important;
+        padding: 0 0 0 0;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-commander a:hover {
+        color: black !important;
+        border: none;
+        font-size: 16px !important;
+        padding: 0 0 0 0;
+        text-decoration: none;
+    }
+
+    .wpcf7-contact-form .text,
+    .wpcf7-contact-form .email,
+    .wpcf7-contact-form .textarea {
+        width: 100%;
+        display: flex;
+        margin-left: 6%;
+    }
+    
+     
+    .wpcf7--form .wpcf7-text,
+    .wpcf7-email {
+        width: 100%;
+        display: flex;
+        
+    }
+    .submit--form {
+        margin-left: 41%;
+    }
+
+    .wpcf7-contact-form label {
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form input[type="submit"] {
+        margin-left: 19%;
+    }
+
+    .wpcf7--form {
+        flex-direction: column;
+    }
+
+    .wpcf7-info-form label,
+    h2 {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .uk-touch{
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wpcf7-contact-form .text,
+    .wpcf7-contact-form .email,
+    .wpcf7-contact-form .textarea {
+        width: 100%;
+        display: flex;
+        margin-left: 6%;
+    }
+    
+     
+    .wpcf7--form .wpcf7-text,
+    .wpcf7-email {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form label {
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form input[type="submit"] {
+        margin-left: 19%;
+    }
+
+    .wpcf7--form {
+        flex-direction: column;
+    }
+
+    .wpcf7-info-form label,
+    h2 {
+        margin-left: 15px;
+    }
+
+    .menu-commander a {
+        background-color: transparent !important;
+        color: black !important;
+        border: none;
+        font-size: 11px !important;
+        display: flex;
+        padding: 0 0 0 0;
+    }
+
+    .menu-commander a:hover {
+        color: black !important;
+        border: none;
+        font-size: 11px !important;
+        display: flex;
+        padding: 0 0 0 0;
+        font-weight: 700;
+    }
+
+    .submit--form {
+        margin-left: 29%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .uk-touch{
+        overflow-x: hidden;
+    }
+    .wpcf7-contact-form .text,
+    .wpcf7-contact-form .email,
+    .wpcf7-contact-form .textarea {
+        width: 100%;
+        display: flex;
+        margin-left: 6%;
+    }
+    
+     
+    .wpcf7--form .wpcf7-text,
+    .wpcf7-email {
+        width: 80%;
+        display: flex;
+        gap: 10px;
+        margin-left: 15%;
+    }
+
+    .wpcf7-contact-form label {
+        margin-left: 6%;
+    }
+
+    .wpcf7-contact-form input[type="submit"] {
+        margin-left: 20%;
+    }
+
+    .wpcf7--form {
+        flex-direction: column;
+    }
+
+    .wpcf7-info-form label,
+    h2 {
+        margin-left: 15%;
+    }
 }
