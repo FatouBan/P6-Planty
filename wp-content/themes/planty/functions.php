@@ -21,12 +21,12 @@ function admin_link($items, $args)
 
     if (is_user_logged_in()) {
         $adminlink = admin_url();
-        $items .= '<li class="menu-item"><a href="' . $adminlink . '">Admin</a></li>';
-        $items .= '<li class="menu-commander"><a href="' . site_url('/commande') . '">Commander</a></li>';
+        $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="' . $adminlink . '" class="hfe-menu-item">Admin</a></li>';
+        $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu menu-commander"><a href="' . site_url('/commande') . '" class="hfe-menu-item">Commander</a></li>';
         return $items;
 
     } else {
-        $items .= '<li class="menu-commander"><a href="' . site_url('/commande') . '">Commander</a></li>';
+        $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu menu-commander"><a href="' . site_url('/commande') . '" class="hfe-menu-item">Commander</a></li>';
         return $items;
     }
 

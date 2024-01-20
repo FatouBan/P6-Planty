@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
-
-.uk-touch {
+.uk-notouch{
     overflow-x: hidden;
     width: 100%;
-} 
+}
+.uk-touch{
+    overflow-x: hidden;
+    width: 100%;
+}
 
 /*** Style des menus ***/
+.elementor-element-61c08c5 {
+    margin: 0;
+    padding: 0;
+}
 
+.elementor-58 .elementor-element.elementor-element-acd486f .menu-item a.hfe-menu-item, .elementor-58 .elementor-element.elementor-element-acd486f .menu-item a.hfe-menu-item  {
+    padding: 30px 61px 30px 61px;
+}
 .menu-item a {
     padding: 30px;
     font-size: 16px;
@@ -22,7 +32,6 @@
 }
 
 .menu-commander a {
-    padding: 30px 61px 30px 61px;
     font-weight: 700;
     background-color: #DC9F96;
     color: white !important;
@@ -198,6 +207,7 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: 400;
     }
 
     .menu-commander a:hover {
@@ -206,6 +216,7 @@ h2{
         font-size: 16px !important;
         padding: 0 0 0 0;
         text-decoration: none;
+        font-weight: 700;
     }
     .wpcf7-contact-form .text,
     .wpcf7-contact-form .email,
@@ -243,6 +254,9 @@ h2{
 }
 
 @media only screen and (max-width: 1024px) {
+    .uk-notouch{
+        overflow-x: hidden;
+    }
     .uk-touch{
         overflow-x: hidden;
     }
@@ -253,6 +267,7 @@ h2{
         margin: 0;
         padding: 0;
     }
+
     .menu-commander a {
         background-color: transparent !important;
         color: black !important;
@@ -263,6 +278,7 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: 400;
     }
 
     .menu-commander a:hover {
@@ -271,6 +287,7 @@ h2{
         font-size: 16px !important;
         padding: 0 0 0 0;
         text-decoration: none;
+        font-weight: 700;
     }
 
     .wpcf7-contact-form .text,
@@ -311,6 +328,9 @@ h2{
 }
 
 @media only screen and (max-width: 767px) {
+    .uk-notouch{
+        overflow-x: hidden;
+    }
     .uk-touch{
         overflow-x: hidden;
     }
@@ -360,15 +380,14 @@ h2{
         background-color: transparent !important;
         color: black !important;
         border: none;
-        font-size: 11px !important;
         display: flex;
         padding: 0 0 0 0;
+        font-weight: 400;
     }
 
     .menu-commander a:hover {
         color: black !important;
         border: none;
-        font-size: 11px !important;
         display: flex;
         padding: 0 0 0 0;
         font-weight: 700;
@@ -380,9 +399,13 @@ h2{
 }
 
 @media only screen and (max-width: 468px) {
+    .uk-notouch{
+        overflow-x: hidden;
+    }
     .uk-touch{
         overflow-x: hidden;
     }
+    
     .wpcf7-contact-form .text,
     .wpcf7-contact-form .email,
     .wpcf7-contact-form .textarea {
